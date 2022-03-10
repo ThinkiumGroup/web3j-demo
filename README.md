@@ -52,12 +52,10 @@ Note:
 3. After the result is obtained, the bytecode is stored in a file, and the abi is also stored in another file (note that it is an empty file), such as Storage.bin and Storage.abi in the project
 
 4. Use web3j to compile the file to generate a java class file, the command is as follows
-
-    1. ```shell
+     ```shell
       web3j generate solidity -b file location containing bin -a file location containing abi -o generate java file to location -p which package to generate java file
       E.g:web3j  generate solidity   -b /Users/muzi/Desktop/StoBin.bin -a /Users/muzi/Desktop/Storage.abi -o /Users/muzi/IdeaProjects/web3j-sample/main/java -p com.muzi.muxin.wrapper
       ```
-
 5. Then move the java file to the generate of the project
 
 6. At this point, the preparation work is complete, and then start the test
@@ -67,7 +65,7 @@ Note:
 1. First determine the Rpc address in the util package
 2. included in the project
     1. wallet creation
-        1. ```java
+      1. ```java
          public static void createWallet(String password) throws InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchProviderException, CipherException, JsonProcessingException {
                  WalletFile walletFile;
                  ECKeyPair ecKeyPair = Keys.createEcKeyPair();
@@ -83,9 +81,7 @@ Note:
 
       2. ```java
          address 0x4Da8e87539E3c988D6e2431510C8fccBcaf83855
-         privateKey 95dda4681ed7b9e0eab5e21c07e495a3fdc9975e51e0a8ee7344c55cb45782cf
-         ```
-      
+         privateKey 95dda4681ed7b9e0eab5e21c07e495a3fdc9975e51e0a8ee7344c55cb45782cf         ```
          
       
       3. After the address is created go to[Tap Link](https://www.thinkiumdev.net/DApp%20Development/Faucet.html)get the test tkm
